@@ -1,0 +1,36 @@
+{
+    "name": "sergmoro1/laravel-rbac",
+    "description": "Role Based Access Control (RBAC) for Laravel based on Yii3 package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergey Morozov",
+            "email": "sergmoro1@ya.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "yiisoft/rbac": "^2.0",
+        "yiisoft/rbac-php": "^2.0",
+        "yiisoft/rbac-rules-container": "^2.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sergmoro1\\Rbac\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sergmoro1\\Rbac\\RbacServiceProvider"
+            ]
+        }
+    }
+}
