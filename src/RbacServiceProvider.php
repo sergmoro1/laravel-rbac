@@ -10,8 +10,8 @@ class RbacServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/Console/Commands' => base_path('Console/Commands'),
-            ]);
+                __DIR__.'/Console/Commands' => base_path('app/Console/Commands'),
+            ], 'rbac-sample');
         }
     }
 }

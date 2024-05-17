@@ -1,6 +1,6 @@
 <?php
 
-namespace Sergmoro1\Rbac\Console\Commands;
+namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Yiisoft\Rbac\Manager;
@@ -10,7 +10,7 @@ use Yiisoft\Rbac\Php\AssignmentsStorage;
 use Yiisoft\Rbac\Php\ItemsStorage;
 use Yiisoft\Rbac\Rules\Container\RulesContainer;
 use Yiisoft\Access\AccessCheckerInterface;
-use Sergmoro1\Rbac\Commands\Rbac\Rules\AdminOrOwnerRule;
+use App\Console\Commands\Rbac\Rules\AdminOrOwnerRule;
 use App\Models\User;
 
 class Rbac extends Command
@@ -20,7 +20,7 @@ class Rbac extends Command
      *
      * @var string
      */
-    protected $signature = 'rbacexample:init';
+    protected $signature = 'rbac:init';
 
     /**
      * The console command description.
